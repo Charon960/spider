@@ -42,6 +42,8 @@ public class IndexController {
 	@RequestMapping("/index.htm")
 	public String index(QueryEntity query, ModelMap model) throws IOException{
 		Map<String, String> map;
+		
+		
 		if ((map = query.wrap()) != null) {
 			TotalResultEntity totalResultEntity;
 			if (query.equals(r_query)) {
